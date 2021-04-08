@@ -18,7 +18,7 @@
             android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="30dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ia" />
 
@@ -26,24 +26,26 @@
             android:id="@+id/edtUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
+            android:drawableRight="@drawable/ic_baseline_person"
             android:hint="Entrar com usuário"
             android:inputType="textPersonName"
-            android:padding="10dp" />
+            android:padding="20dp" />
 
         <EditText
             android:id="@+id/edtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
+            android:drawableRight="@drawable/ic_baseline_lock"
             android:hint="Entrar com a senha"
             android:inputType="textPassword"
-            android:padding="10dp" />
+            android:padding="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <Button
@@ -66,6 +68,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/txtCadUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
