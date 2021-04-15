@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,8 +20,9 @@ import com.google.android.material.appbar.MaterialToolbar;
 public class MenuPrincipal_Activity extends AppCompatActivity {
     //declaração do objeto que representará o componente do xml
     //Variável global
-    Button btnVoltar;
+   // Button btnVoltar;
     MaterialToolbar toolbar;
+    ImageButton btnAddProfile, btnListar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +31,31 @@ public class MenuPrincipal_Activity extends AppCompatActivity {
         setContentView(R.layout.menu_principal_layout);
 
         //ligar o objeto do java ao componente do xml
-        btnVoltar = findViewById(R.id.btnVoltar);
-        toolbar = findViewById(R.id.mToolbar);
 
+        toolbar = findViewById(R.id.mToolbar);
+        btnAddProfile = findViewById(R.id.btnAddProfile);
+        btnListar = findViewById(R.id.btnListar);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),
+                        Login_Activity.class));
+                finish();
+            }
+        });
+
+
+        btnAddProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),
+                        PerfilUsuario_Activity.class));
+                finish();
+            }
+        });
+
+        /*
         //criar o método para realizar a ação de abrir janela.
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +66,7 @@ public class MenuPrincipal_Activity extends AppCompatActivity {
                 //fechar a janela atual
                 finish();
             }
-        });
+        });*/
 
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override

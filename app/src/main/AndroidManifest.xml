@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEmpresaTI96">
         <activity
+            android:name=".PerfilUsuario_Activity"
+            android:theme="@style/temaSemBarra"></activity>
+        <activity
             android:name=".Splash_Activity"
             android:theme="@style/temaSemBarra">
             <intent-filter>
@@ -24,7 +27,9 @@
         <activity
             android:name=".CadUsuario_Activity"
             android:theme="@style/temaSemBarra" />
-        <activity android:name=".MenuPrincipal_Activity" android:theme="@style/temaSemBarra"/>
+        <activity
+            android:name=".MenuPrincipal_Activity"
+            android:theme="@style/temaSemBarra" />
         <activity
             android:name=".Login_Activity"
             android:theme="@style/temaSemBarra">

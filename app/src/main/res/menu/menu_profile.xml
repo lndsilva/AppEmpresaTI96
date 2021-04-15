@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mPAlterar"
+        android:icon="@drawable/ic_baseline_update"
+        android:title="Alterar" />
+    <item
+        android:id="@+id/mPExcluir"
+        android:icon="@drawable/ic_baseline_delete"
+        android:title="Excluir" />
+    <item
+        android:id="@+id/mPPesquisar"
+        android:icon="@drawable/ic_baseline_search"
+        android:title="Alterar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mPVoltar"
+        android:icon="@drawable/ic_baseline_arrow_back"
+        android:title="Voltar" />
+
+</menu>
